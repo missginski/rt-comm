@@ -1,0 +1,46 @@
+.lg-text {
+    padding: 4rem 0;
+    text-align: center;
+    font-family: "Montserrat";
+
+    &.lg-text-bg {
+        background: no-repeat center url("../images/4.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+
+        &::before {
+            content: "";
+            background-color: $black;
+            opacity: .4;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+          }
+
+        .lg-text-inner {
+            color: #fff;
+        }
+    }
+
+    .lg-text-inner {
+        color: #333;
+        position: relative;
+        z-index: 3;
+
+        .lg-text-title {
+            font-family: "Oswald";
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .lg-text-content {
+            font-size: 1.25rem;
+        }
+    }
+}

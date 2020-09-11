@@ -1,0 +1,49 @@
+.services-col {
+    position: relative;
+    padding: 4rem 0;
+
+    .service-card {
+        position: relative;
+    
+        .service-img-wpr {
+            max-width: 100%;
+            height: 300px;
+            overflow: hidden;
+
+            img:hover {
+                transform: scale(1.5);
+                transition: .3s;
+            }
+            
+            .overlay {
+                background-color: $black;
+                opacity: .4;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+            }
+        }
+
+        .service-card-title {
+            font-size: 3rem;
+            font-weight: 700;
+            font-family: "Oswald";
+            text-transform: uppercase;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }   
+    }
+}
+
