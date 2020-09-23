@@ -16,7 +16,7 @@ body {
     text-decoration: none;
     color: #333; }
     body a:hover {
-      color: #772953; }
+      color: #74BDCB; }
   body li {
     list-style: none; }
   body ul {
@@ -275,16 +275,20 @@ MENU
   padding: 4rem 0; }
   .services-col .service-card {
     position: relative;
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 1rem; }
     .services-col .service-card .service-img-wpr {
       max-width: 100%;
       height: 300px;
-      overflow: hidden; }
-      .services-col .service-card .service-img-wpr img:hover {
-        -webkit-transform: scale(1.5);
-                transform: scale(1.5);
-        -webkit-transition: .3s;
-        transition: .3s; }
+      overflow: hidden;
+      background-color: #000; }
+      .services-col .service-card .service-img-wpr img {
+        opacity: .7;
+        width: 100%;
+        height: auto; }
+      .services-col .service-card .service-img-wpr:hover {
+        -webkit-transform: scale(1.25);
+                transform: scale(1.25); }
       .services-col .service-card .service-img-wpr .overlay {
         background-color: #000;
         opacity: .4;
@@ -331,11 +335,12 @@ footer {
   footer p {
     color: #fff;
     font-size: .875rem;
-    text-align: center;
-    padding: .75rem .5rem;
+    padding: .25rem .5rem;
     margin-bottom: 0; }
     footer p a {
       color: #fff;
       text-decoration: none; }
+  footer .footer-top {
+    padding: 1rem 0; }
 
 /*# sourceMappingURL=styles.css.map */
