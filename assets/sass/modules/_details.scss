@@ -1,9 +1,38 @@
 .details {
-    padding: 4rem 0;
+    padding: 0 0 4rem 0;
     color: #333;
 
     .row {
         align-items: center;
         padding: 2rem 0;
+
+        ul {
+            padding: .5rem 2rem;
+        }
+
+        li,
+        p {
+            list-style: circle;
+            font-size: 1.25rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        .img-wpr {
+            height: 420px;
+            overflow: hidden;
+        }
+
+        &#installation img {
+            margin-top: -8rem;
+        }
+
+        &#testing .img-wpr {
+            height: auto;
+        }
+
+
     }
 }

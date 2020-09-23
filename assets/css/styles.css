@@ -321,13 +321,28 @@ MENU
               justify-content: center; }
 
 .details {
-  padding: 4rem 0;
+  padding: 0 0 4rem 0;
   color: #333; }
   .details .row {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     padding: 2rem 0; }
+    .details .row ul {
+      padding: .5rem 2rem; }
+    .details .row li,
+    .details .row p {
+      list-style: circle;
+      font-size: 1.25rem; }
+    .details .row h2 {
+      font-size: 3rem; }
+    .details .row .img-wpr {
+      height: 420px;
+      overflow: hidden; }
+    .details .row#installation img {
+      margin-top: -8rem; }
+    .details .row#testing .img-wpr {
+      height: auto; }
 
 footer {
   background-color: #2c3e50;
