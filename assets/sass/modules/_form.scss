@@ -1,35 +1,108 @@
 
-form {
+.form-wpr {
+    background-color: #fff;
+    border-radius: 2px;
+    max-width: 780px;
+    margin: 0 auto 2rem;
+
+    .contact-form {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 40px 30px;
     
-        input {
-            background-color: $white;
-            color: #333;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
-            font-weight: 100;
-            line-height: 60px;
-            height: 60px;
-            width: 350px;
-            border: 1px solid #dedede;
+        input[type=text], 
+        input[type=email], 
+        textarea {
+            border: 2px solid;
+            padding: 13px 0 13px 13px;
+            margin: 15px 0;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif, Arial;
+            font-weight: 700;
+            width: 100%;
+            line-height: 25px;
         }
-
-        button {
-            background-color: $green;
-            color: $white;
-            font-family: 'Josefin Sans', sans-serif;
-            font-size: 22px;
-            line-height: 60px;
-            height: 60px;
-            width: 180px;
-            border: none;
-            margin-left: 1rem;
-            transition: .3s ease;
-
-        // &:hover {
-        //     cursor: pointer;
-        //     background-color: $dk-green;
-        // }
+    
+        input[name="your-name"] {
+            margin-top: 0;
+        }
+    
+        textarea {
+            height: 225px;
+            margin-top: 0;
+        }
+    
+        input[type=submit] {	
+            display: block;
+            border: 2px solid;
+            text-align: center;
+            padding: 15px 0px;
+            width: 280px;
+            margin: auto;
+            cursor: pointer;
+            vertical-align: middle;
+            text-decoration: none;
+            background: transparent;
+            font-family: 'Montserrat', sans-serif, Arial;
+            font-weight: 700;
+            font-size: 20px;
+            transition: color .2s linear, background-color .2s linear, border-color .2s linear;
+    
+            &:hover {
+                color: #74BDCB;
+            }
+        }
     }
 }
+
+
+
+
+.contact-form input[type=text]::-webkit-input-placeholder, 
+.contact-form input[type=email]::-webkit-input-placeholder, 
+.contact-form textarea::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif, Arial;
+    color: #404040;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.contact-form input[type=text]::-moz-placeholder, 
+.contact-form input[type=email]::-moz-placeholder, 
+.contact-form textarea::-moz-placeholder {
+    font-family: 'Montserrat', sans-serif, Arial;
+    color: #404040;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.contact-form input[type=text]:-ms-input-placeholder, 
+.contact-form input[type=email]:-ms-input-placeholder, 
+.contact-form textarea:-ms-input-placeholder {
+    font-family: 'Montserrat', sans-serif, Arial;
+    color: #404040;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.contact-form input[type=text]:-moz-placeholder, 
+.contact-form input[type=email]:-moz-placeholder, 
+.contact-form textarea:-moz-placeholder {
+    font-family: 'Montserrat', sans-serif, Arial;
+    color: #404040;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
       
   
