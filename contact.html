@@ -54,7 +54,7 @@
 	</div>
 	<!-- HERO END -->
 	<!-- LARGE TEXT BEGIN -->
-	<div class="lg-text">
+	<!-- <div class="lg-text">
 		<div class="container">
 			<div class="lg-text-inner">
 				<div class="lg-text-content">
@@ -62,7 +62,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
     <!-- LARGE TEXT END -->
     <!-- <div class="container">
         <form class="contact" action="submit">
@@ -81,12 +81,28 @@
 				<form class="contact-form">
 					<div class="row">
 						<div class="col-md-6 col-sm-12">
-							<input id="name" type="text" name="your-name" placeholder="Name">
-							<input id="contact-email" type="email" name="your-email" placeholder="Email">
-							<input id="subject" type="text" name="your-subject" placeholder="Subject">
+							<div class="icon-wpr">
+								<label for="your-name">Name</label>
+								<input id="name" type="text" name="your-name" placeholder="Name">
+								<i class="fa fa-user fa-lg"></i>
+							</div>
+							<div class="icon-wpr">
+								<label for="your-email">Email</label>
+								<input id="contact-email" type="email" name="your-email" placeholder="Email">
+								<i class="fas fa-envelope fa-lg"></i>
+							</div>
+							<div class="icon-wpr">
+								<label for="your-phone">Phone</label>
+								<input id="phone" type="text" name="your-phone" placeholder="Phone">
+								<i class="fas fa-phone fa-lg"></i>
+							</div>
 						</div>
 						<div class="col-md-6 col-sm-12">
-							<textarea id="message" name="your-message" placeholder="Message"></textarea>
+							<div class="icon-wpr">
+								<label for="your-message">Message</label>
+								<textarea id="message" name="your-message" placeholder="Message"></textarea>
+								<i class="fas fa-comment fa-lg"></i>
+							</div>
 						</div>
 					</div>
 					<input type="submit" onClick="SendMail()" value="SEND">

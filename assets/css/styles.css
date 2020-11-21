@@ -113,8 +113,8 @@ NAV TOGGLE
   header .toggle-nav {
     display: none;
     background-color: #333;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     position: absolute;
     top: 10px;
@@ -125,7 +125,7 @@ NAV TOGGLE
       content: '';
       background: #fff;
       height: 3px;
-      width: 25px;
+      width: 40px;
       display: block;
       position: absolute;
       top: 50%;
@@ -133,13 +133,13 @@ NAV TOGGLE
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
     header .toggle-nav .line::before {
-      width: 25px;
-      top: calc(50% - 10px);
+      width: 40px;
+      top: calc(50% - 12px);
       -webkit-transition: .3s ease;
       transition: .3s ease; }
     header .toggle-nav .line::after {
-      width: 25px;
-      top: calc(50% + 10px);
+      width: 40px;
+      top: calc(50% + 12px);
       -webkit-transition: .3s ease;
       transition: .3s ease; }
     header .toggle-nav.close-nav .line {
@@ -183,11 +183,8 @@ NAV TOGGLE
       opacity: 1;
       top: 80px; } }
 
-/*******************
-MENU
-*******************/
 .hero-image {
-  background: no-repeat center url("../images/Resized.jpg");
+  background: no-repeat center url("../images/8.jpg");
   background-size: cover;
   height: 700px;
   position: relative;
@@ -276,54 +273,44 @@ MENU
       font-size: 1.25rem; }
 
 .services-col {
-  position: relative;
   padding: 4rem 0; }
   .services-col .service-card {
-    position: relative;
     color: #fff;
-    margin-bottom: 1rem; }
-    .services-col .service-card .service-img-wpr {
-      max-width: 100%;
-      height: 300px;
-      overflow: hidden;
-      background-color: #000; }
-      .services-col .service-card .service-img-wpr img {
-        opacity: .7;
-        width: 100%;
-        height: auto; }
-      .services-col .service-card .service-img-wpr:hover {
-        -webkit-transform: scale(1.25);
-                transform: scale(1.25); }
-      .services-col .service-card .service-img-wpr .overlay {
-        background-color: #000;
-        opacity: .4;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1; }
-    .services-col .service-card .service-card-title {
+    height: 220px;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden; }
+    .services-col .service-card a {
+      color: #fff; }
+    .services-col .service-card h3 {
       font-size: 3rem;
       font-weight: 700;
       font-family: "Oswald";
       text-transform: uppercase;
-      height: 100%;
-      width: 100%;
       position: absolute;
-      top: 0;
-      left: 0;
       z-index: 3;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+    .services-col .service-card .service-img-wpr {
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+      background-color: #000; }
+      .services-col .service-card .service-img-wpr img {
+        opacity: .5;
+        width: 100%;
+        -webkit-transform: scale(1.04);
+                transform: scale(1.04);
+        -webkit-transition: opacity .5s, -webkit-transform .5s;
+        transition: opacity .5s, -webkit-transform .5s;
+        transition: transform .5s, opacity .5s;
+        transition: transform .5s, opacity .5s, -webkit-transform .5s; }
+        .services-col .service-card .service-img-wpr img:hover {
+          opacity: .8;
+          -webkit-transform: scale(1.15);
+                  transform: scale(1.15); }
 
 .details {
   padding: 0 0 4rem 0;
@@ -367,16 +354,29 @@ footer {
   background-color: #fff;
   border-radius: 2px;
   max-width: 780px;
-  margin: 0 auto 2rem; }
+  margin: 4rem auto; }
   .form-wpr .contact-form {
     max-width: 100%;
     margin: 0 auto;
     padding: 40px 30px; }
+    .form-wpr .contact-form label {
+      display: none; }
+    .form-wpr .contact-form .icon-wpr {
+      position: relative; }
+      .form-wpr .contact-form .icon-wpr i {
+        position: absolute;
+        left: 15px;
+        top: 20px;
+        color: #404040; }
+        .form-wpr .contact-form .icon-wpr i.fa-envelope, .form-wpr .contact-form .icon-wpr i.fa-phone {
+          top: 35px; }
+        .form-wpr .contact-form .icon-wpr i.fa-comment {
+          top: 21px; }
     .form-wpr .contact-form input[type=text],
     .form-wpr .contact-form input[type=email],
     .form-wpr .contact-form textarea {
       border: 2px solid;
-      padding: 13px 0 13px 13px;
+      padding: 15px 0 13px 13px;
       margin: 15px 0;
       font-size: 16px;
       font-family: 'Montserrat', sans-serif, Arial;
@@ -385,6 +385,11 @@ footer {
       line-height: 25px; }
     .form-wpr .contact-form input[name="your-name"] {
       margin-top: 0; }
+    .form-wpr .contact-form input[name="your-name"],
+    .form-wpr .contact-form input[name="your-email"],
+    .form-wpr .contact-form input[name="your-phone"],
+    .form-wpr .contact-form textarea {
+      padding-left: 40px; }
     .form-wpr .contact-form textarea {
       height: 225px;
       margin-top: 0; }
@@ -415,38 +420,6 @@ footer {
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
-  text-transform: uppercase; }
-
-.contact-form input[type=text]::-moz-placeholder,
-.contact-form input[type=email]::-moz-placeholder,
-.contact-form textarea::-moz-placeholder {
-  font-family: 'Montserrat', sans-serif, Arial;
-  color: #404040;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-  opacity: 1;
-  text-transform: uppercase; }
-
-.contact-form input[type=text]:-ms-input-placeholder,
-.contact-form input[type=email]:-ms-input-placeholder,
-.contact-form textarea:-ms-input-placeholder {
-  font-family: 'Montserrat', sans-serif, Arial;
-  color: #404040;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-  text-transform: uppercase; }
-
-.contact-form input[type=text]:-moz-placeholder,
-.contact-form input[type=email]:-moz-placeholder,
-.contact-form textarea:-moz-placeholder {
-  font-family: 'Montserrat', sans-serif, Arial;
-  color: #404040;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-  opacity: 1;
   text-transform: uppercase; }
 
 /*# sourceMappingURL=styles.css.map */

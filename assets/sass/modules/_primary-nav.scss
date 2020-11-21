@@ -54,8 +54,8 @@ NAV TOGGLE
   .toggle-nav {
     display: none;
     background-color: #333;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     position: absolute;
     top: 10px;
@@ -67,7 +67,7 @@ NAV TOGGLE
       content: '';
       background: $white;
       height: 3px;
-      width: 25px;
+      width: 40px;
       display: block;
       position: absolute;
       top: 50%;
@@ -76,16 +76,14 @@ NAV TOGGLE
     }
 
     .line::before {
-      width: 25px;
-      top: calc(50% - 10px);
-      // left: calc(50% + 5px);
+      width: 40px;
+      top: calc(50% - 12px);
       transition: .3s ease;
     }
 
     .line::after {
-      width: 25px;
-      top: calc(50% + 10px);
-      // left: calc(50% + 5px);
+      width: 40px;
+      top: calc(50% + 12px);
       transition: .3s ease;
     }
 
@@ -138,48 +136,3 @@ NAV TOGGLE
     }
   } 
 }
-
-/*******************
-MENU
-*******************/
-// .menu {
-//   background-color: $white;
-//   height: 450px;
-//   width: 355px;
-//   text-align: center;
-//   padding: 8.75rem 2rem;
-//   position: fixed;
-//   top: 0;
-//   left: -355px;
-//   opacity: 0;
-//   transition: .3s ease;
-//   z-index: 3;
-
-//   @include sm {
-//     width: 100%;
-//   }
-
-//   .menu-item {
-//     // color: $dark-grey;
-//     font-weight: 600;
-//     font-size: 2rem;
-//     padding: 2rem 0 0;
-
-//     &:first-child {
-//       padding: 0;
-//     }
-
-//     .menu-link {
-//       transition: .3s ease;
-
-//       &:hover {
-//         // color: $pink;
-//       }
-//     }
-//   }
-
-//   &.active {
-//     left: 0;
-//     opacity: 1;
-//   }
-// }

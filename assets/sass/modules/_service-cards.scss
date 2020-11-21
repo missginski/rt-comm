@@ -1,79 +1,46 @@
 .services-col {
-    position: relative;
     padding: 4rem 0;
 
-    // .card {
-
-    //     .img-wpr {
-    //         max-width: 100%;
-    //         height: 300px;
-    //         overflow: hidden;
-    //         background-color: #000;
-
-    //         img {
-    //             opacity: .7;
-    //             width: 100%;
-    //             height: auto;
-    //         }
-
-    //         &:hover {
-    //             transform: scale(1.25);
-    //         }
-    //     }
-    // }
-
     .service-card {
-        position: relative;
         color: #fff;
+        height: 220px;
         margin-bottom: 1rem;
-    
-        .service-img-wpr {
-            max-width: 100%;
-            height: 300px;
-            overflow: hidden;
-            background-color: #000;
+        position: relative;
+        overflow: hidden;
 
-            img {
-                opacity: .7;
-                width: 100%;
-                height: auto;
-                // transform: scale(1.15);
-                // transition: transform .5s, opacity .5s;
-            }
-
-            &:hover {
-                transform: scale(1.25);
-            }
-            
-            .overlay {
-                background-color: $black;
-                opacity: .4;
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: 1;
-            }
+        a {
+            color: #fff;
         }
-
-        .service-card-title {
+        
+        h3 {
             font-size: 3rem;
             font-weight: 700;
             font-family: "Oswald";
             text-transform: uppercase;
-            height: 100%;
-            width: 100%;
             position: absolute;
-            top: 0;
-            left: 0;
             z-index: 3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
 
-        }   
+        .service-img-wpr {
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+    
+            img {
+                opacity: .5;
+                width: 100%;
+                transform: scale(1.04);
+                transition: transform .5s, opacity .5s;
+    
+                &:hover {
+                    opacity: .8;
+                    transform: scale(1.15);
+                }
+            }
+        }
     }
 }
-

@@ -3,18 +3,42 @@
     background-color: #fff;
     border-radius: 2px;
     max-width: 780px;
-    margin: 0 auto 2rem;
+    margin: 4rem auto;
 
     .contact-form {
         max-width: 100%;
         margin: 0 auto;
         padding: 40px 30px;
-    
+
+        label {
+            display: none;
+        }
+
+        .icon-wpr { 
+            position: relative; 
+
+            i { 
+                position: absolute; 
+                left: 15px; 
+                top: 20px; 
+                color: #404040; 
+
+                &.fa-envelope,
+                &.fa-phone {
+                    top: 35px;
+                }
+
+                &.fa-comment {
+                    top: 21px;
+                }
+            } 
+        } 
+            
         input[type=text], 
         input[type=email], 
         textarea {
             border: 2px solid;
-            padding: 13px 0 13px 13px;
+            padding: 15px 0 13px 13px;
             margin: 15px 0;
             font-size: 16px;
             font-family: 'Montserrat', sans-serif, Arial;
@@ -25,6 +49,13 @@
     
         input[name="your-name"] {
             margin-top: 0;
+        }
+
+        input[name="your-name"],
+        input[name="your-email"],
+        input[name="your-phone"],
+        textarea {
+            padding-left: 40px;
         }
     
         textarea {
@@ -56,8 +87,6 @@
 }
 
 
-
-
 .contact-form input[type=text]::-webkit-input-placeholder, 
 .contact-form input[type=email]::-webkit-input-placeholder, 
 .contact-form textarea::-webkit-input-placeholder {
@@ -69,40 +98,6 @@
     text-transform: uppercase;
 }
 
-.contact-form input[type=text]::-moz-placeholder, 
-.contact-form input[type=email]::-moz-placeholder, 
-.contact-form textarea::-moz-placeholder {
-    font-family: 'Montserrat', sans-serif, Arial;
-    color: #404040;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-    opacity: 1;
-    text-transform: uppercase;
-}
-
-.contact-form input[type=text]:-ms-input-placeholder, 
-.contact-form input[type=email]:-ms-input-placeholder, 
-.contact-form textarea:-ms-input-placeholder {
-    font-family: 'Montserrat', sans-serif, Arial;
-    color: #404040;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-    text-transform: uppercase;
-}
-
-.contact-form input[type=text]:-moz-placeholder, 
-.contact-form input[type=email]:-moz-placeholder, 
-.contact-form textarea:-moz-placeholder {
-    font-family: 'Montserrat', sans-serif, Arial;
-    color: #404040;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-    opacity: 1;
-    text-transform: uppercase;
-}
 
       
   
