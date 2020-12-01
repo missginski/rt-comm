@@ -247,6 +247,12 @@ NAV TOGGLE
     background-size: cover;
     background-attachment: fixed;
     position: relative; }
+    .lg-text.lg-text-bg.services {
+      background: no-repeat center url("../images/12.jpg");
+      background-attachment: fixed; }
+    .lg-text.lg-text-bg.contact {
+      background: no-repeat center url("../images/11.jpg");
+      background-attachment: fixed; }
     .lg-text.lg-text-bg::before {
       content: "";
       background-color: #000;

@@ -9,6 +9,16 @@
         background-attachment: fixed;
         position: relative;
 
+        &.services {
+            background: no-repeat center url("../images/12.jpg");
+            background-attachment: fixed;
+          }
+
+        &.contact {
+            background: no-repeat center url("../images/11.jpg");
+            background-attachment: fixed;
+        }
+
         &::before {
             content: "";
             background-color: $black;
